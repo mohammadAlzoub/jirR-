@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altayba Restaurant Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-bottom: 90px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Navigation styles */
+        nav {
+            background-color: #000;
+            /* Black background color */
+            padding: 15px;
+            /* Padding around the navigation links */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            /* Remove default margin */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            /* Padding around each link */
+        }
+        nav ul li a:hover {
+            color: #fff;
+            /* Change color on hover if needed */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .faq {
+            margin-top: 40px;
+        }
+    </style>
+    <!--Google Translate API-->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><a href="index.html">Home</a></a></li>
+            <li><a href="menu.html"><a href="index menu.html2.html">Menu</a></a></li>
+                    <li><a href="Offer.html"><a href="index.html3.html">Offer</a></a></li>
+                    <li><a href="my delivery.html"><a href="index.html4.html">My Delivery</a></a></li>
+                    <li><a href="Aboutus.html"><a href="index.html.5.html">About Us</a></a></li>
+                    <li><a href="Contactus.html"><a href="index.html6.html">Contact Us</a></a></li>
+                    <li><a href="Locations.html"><a href="index.html7.html">Location</a></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 style="font-family: 'Georgia', serif;">Altayba Restaurant</h1>
+        <h2>Altayba Restaurant</h2>
+        <p>Delicious Food Delivered to Your Doorstep</p>
+        <p>We prioritize freshness, speed, and satisfaction in every delivery.</p>
+    </header>
+
+    <section>
+        <h2>My Delivery</h2>
+        <p>Item 1: Description and Price</p>
+        <p>Item 2: Description and Price</p>
+
+        <h2>Order Now</h2>
+        <form action="order_processing_script.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="items">Select Items:</label>
+            <select id="items" name="items[]" multiple required>
+                <!-- List your menu items as options -->
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <!-- Repeat for other menu items -->
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>FAQs</h2>
+            <h3>How quickly will my order arrive?</h3>
+            <p>We strive to deliver orders within 30-45 minutes within the city limits. Delays may occur during peak hours.</p>
+
+            <h3>Do you have a minimum order amount for delivery?</h3>
+            <p>Yes, our minimum order amount for delivery is £20.</p>
+
+            <h3>What safety measures do you take during delivery?</h3>
+            <p>All our delivery personnel follow strict hygiene and safety protocols, including wearing masks and using sanitizers.</p>
+        </div>
+
+        <div class="why-choose-us">
+            <h2>Why Choose Altayba Restaurant for Delivery?</h2>
+            <p>With our commitment to quality, freshness, and timely deliveries, we ensure that every meal reaches you hot, fresh, and ready to delight your taste buds.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mohammad Alabd Alfattah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
