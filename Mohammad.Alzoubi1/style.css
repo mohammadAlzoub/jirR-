@@ -1,0 +1,357 @@
+/* General Styles */
+body {
+    font-family: 'Abyssinica SIL', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #adb5bd !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler span {
+    color: #ffffff;
+}
+
+#btncv, #btncv2 {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btncv:hover, #btncv2:hover {
+    background-color: #0056b3;
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 600px;
+}
+
+.content h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.content h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: #ffffff;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+}
+
+#about .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#about h5 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#services h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#services p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Section */
+#resume {
+    padding: 60px 0;
+}
+
+.hr {
+    border-top: 2px solid #007bff;
+    margin: 30px 0;
+}
+
+#resume h5, #resume h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resume h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#resume h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#resume p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 0;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+#contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#btncontact {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btncontact:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer .icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#footer .icons i:hover {
+    color: #007bff;
+}
+
+#footer .copyright, #footer .credite {
+    margin-top: 10px;
+}
+
+#footer .credite a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#footer .credite a:hover {
+    text-decoration: underline;
+}
+
+/* Arrow Up Button */
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
+
